@@ -1,22 +1,26 @@
-form{
+form {
     width: 70%;
     background-color: #D9D9D9;
     margin: auto;
     margin-top: 2vh;
     padding: 2%;
 }
-body{
+
+body {
     font-size: 20px;
 }
-input{
+
+input {
     font-size: 0.8em;
 }
-label{
+
+label {
     margin-top: 10px;
     display: block;
 }
 
-input:not([type="submit"]):not([type="reset"]),textarea{
+input:not([type="submit"]):not([type="reset"]),
+textarea {
     width: 100%;
     display: block;
     outline: none;
@@ -24,23 +28,55 @@ input:not([type="submit"]):not([type="reset"]),textarea{
     background-color: unset;
     border-bottom: 1px black solid;
 }
+
 input[type="submit"],
-input[type="reset"]
-{
+input[type="reset"] {
     background-color: black;
     border: none;
     color: white;
     padding: 0.5% 2%;
     margin-top: 40px;
 }
-textarea{
+
+textarea {
     background-color: #e6e6e6;
     border: none;
     height: 100px;
 }
 
-@media (max-width: 767px){
-    form{
+@media (max-width: 767px) {
+    form {
         width: 90%;
     }
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#carta {
+    width: 80%;
+    background-color: white;
+    padding: 2% 3% 5% 2%;
+    margin: 2% auto;
+}
+
+#carta pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-top: 2%;
+}
+h2{
+    text-align: center;
+    margin-top: 2%;
+}
+
+#carta>#data{
+    text-align: end;
+}
+#carta>#email{
+    text-align: end;
 }
