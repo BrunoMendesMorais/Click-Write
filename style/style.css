@@ -22,19 +22,23 @@ header {
     grid-template-columns: 90px calc(100% - 90px);
     align-items: center;
     font-size: 50px;
+    z-index: 2000;
+    position: relative;
 }
 
 header svg{
     padding: 20px;
 }
 
-nav{
+#menuDropdown{
     display: flex;
     flex-direction: column;
     width: 300px;
     background-color: #333;
     font-size: 20px;
     height: 200px;
+    transition: all 1s;
+    z-index: 100;
 }
 
 a{
@@ -48,3 +52,5 @@ a{
 a:hover{
     background-color: #2a2a2a;
 }
+
+
