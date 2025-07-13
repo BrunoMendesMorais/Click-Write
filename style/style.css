@@ -39,6 +39,7 @@ header svg{
     height: 200px;
     transition: all 1s;
     z-index: 100;
+    position: absolute;
 }
 
 a{
