@@ -1,0 +1,50 @@
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/JejuHallasan/JejuHallasan.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jeju Hallasan', sans-serif;
+}
+
+body {
+    background: linear-gradient(to left, #363636 10%, #0E0E0E 50%, #363636 90%);
+    width: 100%;
+    min-height: 100dvh;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    min-height: 90px;
+    color: white;
+    display: grid;
+    grid-template-columns: 90px calc(100% - 90px);
+    align-items: center;
+    font-size: 50px;
+}
+
+header svg{
+    padding: 20px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #333;
+    font-size: 20px;
+    height: 200px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a:hover{
+    background-color: #2a2a2a;
+}
