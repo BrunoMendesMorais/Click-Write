@@ -69,14 +69,17 @@ h1 {
     overflow-wrap: break-word;
     margin-top: 2%;
 }
-h2{
+
+h2 {
     text-align: center;
     margin-top: 2%;
 }
 
-#carta>#data{
+#carta>#data {
     text-align: end;
 }
-#carta>#email{
+
+#carta>#email {
     text-align: end;
 }
+
