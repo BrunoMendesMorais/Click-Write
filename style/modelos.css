@@ -1,0 +1,27 @@
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 4%;
+}
+.textoPronto{
+    width: 700px;
+    margin: 2vh auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+.textoPronto button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 2% 10%;
+    margin-top: 3%;
+}
+main{
+    min-height: 75vh;
+}
+footer{
+    margin-top: 4%;
+}
