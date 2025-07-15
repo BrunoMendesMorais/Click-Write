@@ -11,10 +11,10 @@ setTimeout(() => {
 setTimeout(() => {
   cursor.innerHTML=
   `
-  <h1>Click & Write</h1>
+  <h1>Click<br> & <br>Write</h1>
   `
 }, 2600);
 
 setTimeout(() => {
     carta.style.display = "none";
-}, 2900);
+}, 3500);

@@ -29,7 +29,7 @@ main {
 }
 
 #click {
-    margin-top: -10%;
+    margin-top: -10vh;
     position: absolute;
     transform: translate(100vw, -50vh);
     animation: click 1.5s ease-out 1s forwards;
@@ -38,15 +38,33 @@ main {
 a {
     display: inline-block;
     background-color: black;
-    padding: 1% 5%;
+    padding: 10px 70px;
     text-decoration: none;
     color: white;
     margin-top: 200px;
     animation: botao 1.5s ease-out 2s 1 forwards;
     position: absolute;
-    transform: translateY(+100vw);
+    transform: translateY(+100vh);
+    font-size: 20px;
 }
 
+h1 {
+    font-size: 50px;
+    text-align: center;
+
+}
+
+@media (max-width: 700px) {
+    h1 {
+        margin-top: -80%;
+    }
+}
+
+@media (min-width: 700px) {
+    br {
+        display: none;
+    }
+}
 
 @keyframes carta {
     0% {
@@ -73,7 +91,7 @@ a {
 
 @keyframes click {
     0% {
-        transform: translate(100vw, -50vh);
+        transform: translate(100dvw, -50vh);
     }
 
     95% {
@@ -98,7 +116,7 @@ a {
 
 @keyframes botao {
     0% {
-        transform: translateY(+100vw);
+        transform: translateY(+100dvh);
     }
 
     100% {
