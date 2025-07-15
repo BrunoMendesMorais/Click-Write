@@ -6,100 +6,102 @@
     box-sizing: border-box;
     font-family: 'Jeju Hallasan', sans-serif;
 }
-main{
-    position: relative;
-    z-index: 1;
-}
-body {
-    font-size: 20px;
+
+main {
+    width: 100%;
     height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1500px;
     overflow: hidden;
-    
+    animation: mudarCor 5s linear forwards;
 }
-.recolher{
-    transform: translateY(-75%);
-    transition:  2.5s;
-}
-#cortina{
-    height: 60dvh;
-    width: 100%;
+
+#carta {
+    width: 700px;
+    max-width: 80%;
+    max-height: 98%;
+    margin-top: -10%;
+    animation: carta 1.5s ease-out forwards,
+        sumir 1.5s ease-out 2.5s 1 forwards;
     position: absolute;
-    background-color: #000000;
-    z-index: 100;
 }
 
-#original {
-    width: 100%;
-    height: 40dvh;
-    background: linear-gradient(to bottom, #000000 20%, #D9D9D9);
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    flex-direction: column;
-    padding-top: 5%;
-    border-bottom: #e6e6e6 solid 1px;
-}
-#original h1{
-    margin-bottom: -15px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-#reflexo {
-    width: 100%;
-    height: 20dvh;
-    background-color: #D9D9D9;
-    text-align: center;
-    overflow: hidden
-}
-
-#reflexo h1{
-    margin-top: -20px;
-}
-#baixo{
-    height: 40dvh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: linear-gradient(to top, #535353 20%, #BBBBBB);
-    padding: 2% 0;
-}
-#cortinaLateral{
-    width: 100dvw;
+#click {
+    margin-top: -10%;
     position: absolute;
-    z-index: 200;
-    pointer-events: none;
-}
-
-h1 {
-    font-size: 4em;
-    color: white;
-}
-
-
-#reflexo h1 {
-    transform: rotateX(220deg);
-    color: rgb(245, 245, 245);
+    transform: translate(100vw, -50vh);
+    animation: click 1.5s ease-out 1s forwards;
 }
 
 a {
+    display: inline-block;
+    background-color: black;
+    padding: 1% 5%;
     text-decoration: none;
-    background-color: #000000;
     color: white;
-    padding: 1% 10%;
-    z-index: 300;
+    margin-top: 200px;
+    animation: botao 1.5s ease-out 2s 1 forwards;
+    position: absolute;
+    transform: translateY(+100vw);
 }
 
-@media (max-width: 530px) {
-    body {
-        font-size: 3.8dvw;
+
+@keyframes carta {
+    0% {
+        transform:
+            translate(-100vw, -50vh)scale(0.5) rotateX(90deg) rotateY(40deg) rotateZ(360deg);
     }
 
-    p {
-        font-size: 20px;
+    100% {
+        transform: translate(0, 0) scale(1) rotate(0) rotateZ(15deg);
+    }
+}
+
+@keyframes sumir {
+    0% {
+        scale: 1;
+        opacity: 1;
     }
 
-    a {
-        font-size: 20px;
+    100% {
+        scale: 20;
+        opacity: 0;
+    }
+}
+
+@keyframes click {
+    0% {
+        transform: translate(100vw, -50vh);
+    }
+
+    95% {
+        scale: 1;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        scale: 2;
+    }
+}
+
+@keyframes mudarCor {
+    0% {
+        background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(77, 77, 77) 100%);
+    }
+
+    100% {
+        background: linear-gradient(to bottom, rgb(127, 127, 127) 0%, #CBCBCB 100%);
+    }
+}
+
+@keyframes botao {
+    0% {
+        transform: translateY(+100vw);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
