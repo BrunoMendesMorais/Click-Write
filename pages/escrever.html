@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <div id="cortina">
+        <section id="cortinaContent" class="expanded" style="position: absolute;"></section>
+    </div>
     <header id="header">
         <svg onclick="menuAbrir()" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#ffffff"
             viewBox="0 0 256 256">
@@ -57,7 +60,7 @@
 
         </section>
 
-        <section id="carta">
+        <section id="carta" class="cartaE carta" onclick="expandir()">
             <p id="dataCarta">00/00/00</p>
             <p>
                 de <span id="remetenteCarta"></span> para <span id="destinatarioCarta"></span>

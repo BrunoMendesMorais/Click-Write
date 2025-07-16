@@ -22,7 +22,7 @@ header {
     grid-template-columns: 90px calc(100% - 90px);
     align-items: center;
     font-size: 50px;
-    z-index: 2000;
+    z-index: 500;
     position: relative;
 }
 

@@ -18,3 +18,30 @@ document.getElementById('escreverCarta').addEventListener('submit', function (ev
     document.getElementById('tituloCarta').textContent = titulo;
     document.getElementById('mensagemCarta').textContent = mensagem;
 });
+
+const carta = document.getElementById("carta");
+const cortina = document.getElementById("cortina");
+const cortinaContent = document.getElementById("cortinaContent");
+
+function expandir(){
+    cortinaContent.innerHTML = carta.innerHTML;
+    cortinaContent.classList.add('carta');
+    cortina.classList.add('cortina');
+    cortinaContent.style.position = "";
+}
+
+let scale = 1;
+
+function zoomIn() {
+  scale += 0.1;
+  applyZoom();
+}
+
+function zoomOut() {
+  scale = Math.max(0.5, scale - 0.1); // não deixa diminuir demais
+  applyZoom();
+}
+
+function applyZoom() {
+  carta.style.transform = `scale(${scale})`;
+}

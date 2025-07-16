@@ -129,6 +129,9 @@ form>h1 {
 #data {
     grid-area: da;
 }
+main{
+    min-height: 100vh;
+}
 
 #lbDestinatario {
     grid-area: lbDe;
@@ -210,31 +213,35 @@ h1 {
 
 
 
-#carta {
+.carta {
     aspect-ratio: 100 / 135;
-    width: 1200px;
-    max-width: 95%;
     background-color: white;
     padding: 2% 3% 5% 2%;
-    margin: 200px auto 100px auto;
     display: grid;
     grid-template-rows: 1% 2% 5% 90% 1%;
 }
 
-@media (min-width: 1080px){
-    #carta{
+.cartaE {
+    width: 1200px;
+    max-width: 95%;
+    margin: 200px auto 100px auto;
+}
+
+@media (min-width: 1080px) {
+    .cartaE {
         font-size: 20px;
     }
 }
-@media (max-width: 1080px){
-    #carta *{
+
+@media (max-width: 1080px) {
+    .cartaE * {
         font-size: 2vw;
     }
 }
 
 
 
-#carta pre {
+.carta pre {
     white-space: pre-wrap;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -252,4 +259,20 @@ h2 {
 
 #emailCarta {
     text-align: end;
+}
+
+.expanded {
+    width: 1200px;
+    z-index: 2400;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.cortina{
+    background-color: #0000008a;
+    width: 100dvw;
+    height: 100dvh;
+    position: fixed;
+    z-index: 2000;
+    overflow: auto;
 }
