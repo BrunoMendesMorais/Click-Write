@@ -32,10 +32,26 @@ function expandir() {
     body.style.overflow = "hidden"
 }
 
-function sair(){
+function sair() {
     cortinaContent.innerHTML = "";
     cortinaContent.classList.remove('carta');
     cortina.classList.remove('cortina');
     cortina.style.display = "none";
     body.style.overflow = "auto"
+}
+
+let scale = 1;
+
+function zoomIn() {
+    scale += 0.1;
+    applyZoom();
+}
+
+function zoomOut() {
+    scale = Math.max(0.1, scale - 0.1);
+    applyZoom();
+}
+
+function applyZoom() {
+    cortinaContent.style.transform = `scale(${scale})`;
 }

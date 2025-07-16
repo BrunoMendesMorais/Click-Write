@@ -277,9 +277,64 @@ h2 {
     overflow: auto;
 }
 
-@media (width:1300px){
+@media (max-width:1300px){
+
+    .expanded{
+        scale: 0.9;
+    }
 
 }
+
+@media (max-width:1200px){
+
+    .expanded{
+        scale: 0.8;
+    }
+
+}
+
+@media (max-width:1000px){
+
+    .expanded{
+        scale: 0.7;
+    }
+
+}
+
+@media (max-width:870px){
+
+    .expanded{
+        scale: 0.6;
+    }
+
+}
+
+@media (max-width:730px){
+
+    .expanded{
+        scale: 0.5;
+    }
+
+}
+
+@media (max-width:610px){
+    .expanded{
+        scale: 0.4;
+    }
+}
+
+@media (max-width:490px){
+    .expanded{
+        scale: 0.3;
+    }
+}
+
+@media (max-width:380px){
+    .expanded{
+        scale: 0.2;
+    }
+}
+
 
 #sair{
     position: fixed;
@@ -297,3 +352,30 @@ h2 {
     cursor: pointer;
     background-color: rgb(40, 40, 40);
 }
+
+    .controls {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+      z-index: 1000;
+    }
+
+    .zoom-button {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: none;
+      background-color: #000000;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .zoom-button:hover {
+      background-color: #686868;
+    }
