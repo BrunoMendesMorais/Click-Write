@@ -21,27 +21,21 @@ document.getElementById('escreverCarta').addEventListener('submit', function (ev
 
 const carta = document.getElementById("carta");
 const cortina = document.getElementById("cortina");
+const body = document.getElementById("body");
 const cortinaContent = document.getElementById("cortinaContent");
 
-function expandir(){
+function expandir() {
     cortinaContent.innerHTML = carta.innerHTML;
     cortinaContent.classList.add('carta');
     cortina.classList.add('cortina');
-    cortinaContent.style.position = "";
+    cortina.style.display = "block";
+    body.style.overflow = "hidden"
 }
 
-let scale = 1;
-
-function zoomIn() {
-  scale += 0.1;
-  applyZoom();
-}
-
-function zoomOut() {
-  scale = Math.max(0.5, scale - 0.1); // não deixa diminuir demais
-  applyZoom();
-}
-
-function applyZoom() {
-  carta.style.transform = `scale(${scale})`;
+function sair(){
+    cortinaContent.innerHTML = "";
+    cortinaContent.classList.remove('carta');
+    cortina.classList.remove('cortina');
+    cortina.style.display = "none";
+    body.style.overflow = "auto"
 }
