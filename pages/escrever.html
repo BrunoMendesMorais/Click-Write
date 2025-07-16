@@ -30,23 +30,22 @@
     <main>
 
         <form action="" id="escreverCarta">
-            <label for="remetente">Remetente</label>
+            <h1>PREENCHA</h1>
+            <label id="lbRemetente" for="remetente">Remetente</label>
             <input id="remetente" name="remetente" type="text">
-            <label for="data">Data</label>
+            <label id="lbData" for="data">Data</label>
             <input type="date" id="data" name="data">
-            <label for="destinatario">Destinatario</label>
+            <label id="lbDestinatario" for="destinatario">Destinatario</label>
             <input type="text" name="destinatario" id="destinatario">
-            <label for="email">Email do destinatario</label>
-            <input type="email" name="email" id="email">
-            <label for="titulo">Titulo</label>
+            <label id="lbEmail" for="email">Email do destinatario</label>
+            <input  type="email" name="email" id="email">
+            <label id="lbTitulo" for="titulo">Titulo</label>
             <input type="text" name="titulo" id="titulo">
-            <label for="mensagen">Mensagem</label>
+            <label id="lbMensagem" for="mensagen">Mensagem</label>
             <textarea name="mensagem" id="mensagem"></textarea>
             <input type="submit" value="Testar">
             <input type="reset" value="Limpar">
         </form>
-
-        <h1>Teste de carta</h1>
 
         <section id="carta">
             <p id="dataCarta">00/00/00</p>
