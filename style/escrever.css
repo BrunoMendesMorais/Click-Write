@@ -1,30 +1,115 @@
+#prancheta {
+    margin: auto;
+    background-color: #b27856;
+    border-radius: 1.5%;
+    position: relative;
+    top: 100px;
+}
+
+
+#prancheta #suporteSuperior {
+    width: 10%;
+    height: 10%;
+    background-color: #D9D9D9;
+    position: absolute;
+    top: -6%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#prancheta #suporteInferior {
+    width: 26%;
+    height: 4%;
+    background-color: #D9D9D9;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
 form {
     width: 1800px;
-    max-width: 95%;
-    background-color: #414141;
-    margin: auto;
+    height: 90%;
+    max-width: 90%;
+    background-color: #EDEDED;
     padding: 2% 5%;
-    color: white;
+    color: black;
     display: grid;
+    position: absolute;
+    z-index: 1;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
     grid-template-columns: 70% 30%;
 }
+
+
 
 @media (min-width: 650px) {
     form {
         grid-template-areas: "h1 h1" "lbRe lbDa" "re da" "lbDe lbDe" "de de" "lbEm lbEm" "em em" "lbTi lbTi" "ti ti" "lbMe lbMe" "me me" "su su" "a a";
-        grid-template-rows: 80px 40px 30px 40px 30px 40px 30px 60px 30px 60px 200px 80px 40px;
+        grid-template-rows: 10% 4% 3% 4% 3% 4% 3% 5% 3% 4% 46% 5% 5%;
     }
+
+    #data {
+        margin-left: 10%;
+    }
+
+    #prancheta {
+        aspect-ratio: 100 / 135;
+        width: 1000px;
+        max-width: 95%;
+        margin: auto;
+        min-width: 650px;
+    }
+
+    input[type="submit"] {
+
+        height: 70%;
+
+    }
+
+    input[type="reset"] {
+        height: 70%;
+    }
+
 }
 
 @media (max-width: 650px) {
+
     form {
         grid-template-areas: "h1 h1" "lbRe lbRe" "re re" "lbDa lbDa" "da da" "lbDe lbDe" "de de" "lbEm lbEm" "em em" "lbTi lbTi" "ti ti" "lbMe lbMe" "me me" "su su" "a a";
         grid-template-rows: 80px 40px 30px 40px 30px 40px 30px 40px 30px 60px 30px 60px 200px 80px 40px;
     }
+
+    #prancheta {
+        height: 1000px;
+        width: 650px;
+        max-width: 120vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    main {
+        overflow-x: hidden;
+    }
+
+    input[type="submit"] {
+        height: 40px;
+    }
+
+    input[type="reset"] {
+        height: 40px;
+    }
+
 }
 
 form>h1 {
     grid-area: h1;
+    font-size: 2em;
 }
 
 #lbRemetente {
@@ -63,8 +148,9 @@ form>h1 {
 
 #lbTitulo {
     grid-area: lbTi;
-    text-align: center;
-    margin-top: 30px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
 
 #titulo {
@@ -73,54 +159,55 @@ form>h1 {
 
 #lbMensagem {
     grid-area: lbMe;
-    text-align: center;
-    margin-top: 30px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
 
 #mensagem {
     grid-area: me;
+    padding: 2%;
 }
 
 input[type="submit"] {
     grid-area: su;
-    margin-top: 40px;
     width: 50%;
-    height: 40px;
-    margin: 30px auto;
+    background-color: #BBBBBB;
+    margin: auto;
 }
 
 input[type="reset"] {
     grid-area: a;
     width: 50%;
-    height: 40px;
     margin: auto;
+    background-color: #BBBBBB;
 }
 
 body {
     font-size: 20px;
 }
 
-input {
+input,
+textarea {
     font-size: 0.8em;
+    background-color: #D9D9D9;
+    border: none;
+    outline: none;
+    padding: 0 2% 0 2%;
 }
 
 label {
-    margin-top: 10px;
+    margin-top: 2%;
     display: block;
 }
 
 
-@media (max-width: 767px) {
-    form {
-        width: 90%;
-    }
-}
-
 h1 {
-    color: white;
+    color: black;
     text-align: center;
     margin-top: 2%;
 }
+
 
 
 #carta {
