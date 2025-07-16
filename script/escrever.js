@@ -2,6 +2,11 @@ const carta = document.getElementById("carta");
 const cortina = document.getElementById("cortina");
 const body = document.getElementById("body");
 const cortinaContent = document.getElementById("cortinaContent");
+const prancheta = document.getElementById("prancheta");
+
+setTimeout(() => {
+    prancheta.style.zIndex = "1"
+}, 2000);
 
 document.getElementById('escreverCarta').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -13,7 +18,7 @@ document.getElementById('escreverCarta').addEventListener('submit', function (ev
     const titulo = document.getElementById('titulo').value;
     const mensagem = document.getElementById('mensagem').value;
     carta.style.display = "grid";
-    carta.classList.add("escrever")
+    carta.classList.add("escrever");
     document.getElementById('remetenteCarta').textContent = remetente;
     document.getElementById('dataCarta').textContent = data;
     document.getElementById('destinatarioCarta').textContent = destinatario;

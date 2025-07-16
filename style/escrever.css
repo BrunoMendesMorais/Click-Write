@@ -1,11 +1,10 @@
 #prancheta {
-    margin: auto;
     background-color: #b27856;
     border-radius: 1.5%;
-    position: relative;
-    top: 100px;
     animation: prancheta 2s linear backwards;
-    z-index: 10000;
+    z-index: 2000;
+    position: relative;
+    margin: 100px auto 0 auto;
 }
 
 
@@ -63,7 +62,6 @@ form {
         aspect-ratio: 100 / 135;
         width: 1000px;
         max-width: 95%;
-        margin: auto;
         min-width: 650px;
     }
 
