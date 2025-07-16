@@ -211,11 +211,28 @@ h1 {
 
 
 #carta {
-    width: 80%;
+    aspect-ratio: 100 / 135;
+    width: 1200px;
+    max-width: 95%;
     background-color: white;
     padding: 2% 3% 5% 2%;
-    margin: 2% auto;
+    margin: 200px auto 100px auto;
+    display: grid;
+    grid-template-rows: 1% 2% 5% 90% 1%;
 }
+
+@media (min-width: 1080px){
+    #carta{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1080px){
+    #carta *{
+        font-size: 2vw;
+    }
+}
+
+
 
 #carta pre {
     white-space: pre-wrap;

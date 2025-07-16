@@ -11,6 +11,7 @@ h1{
     text-align: center;
     flex-direction: column;
     color: white;
+    max-width: 90%;
 }
 .textoPronto button{
     background-color: black;
