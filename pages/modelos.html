@@ -23,10 +23,38 @@
         Click & Write
     </header>
     <nav id="menuDropdown" style="transform: translateY(-100vh);">
-        <a href="../index.html">Home</a>
-        <a href="modelos.html">Modelos de mensagens</a>
-        <a href="escrever.html">Escrever</a>
-        <a href="sobre.html">Sobre</a>
+        <a href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256">
+                <path
+                    d="M224,120v96a8,8,0,0,1-8,8H160a8,8,0,0,1-8-8V164a4,4,0,0,0-4-4H108a4,4,0,0,0-4,4v52a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V120a16,16,0,0,1,4.69-11.31l80-80a16,16,0,0,1,22.62,0l80,80A16,16,0,0,1,224,120Z">
+                </path>
+            </svg>
+            <span>Home</span>
+        </a>
+        <a href="escrever.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256">
+                <path
+                    d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM176,168H80a8,8,0,0,1,0-16h96a8,8,0,0,1,0,16Zm0-32H80a8,8,0,0,1,0-16h96a8,8,0,0,1,0,16Zm0-32H80a8,8,0,0,1,0-16h96a8,8,0,0,1,0,16Z">
+                </path>
+            </svg>
+            <span>Escrever</span>
+        </a>
+        <a href="modelos.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256">
+                <path
+                    d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32Zm-8,128H176V88a8,8,0,0,0-8-8H96V48H208Z">
+                </path>
+            </svg>
+            <span>Modelos de mensagens</span>
+        </a>
+        <a href="sobre.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256">
+                <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm-4,48a12,12,0,1,1-12,12A12,12,0,0,1,124,72Zm12,112a16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40a8,8,0,0,1,0,16Z">
+                </path>
+            </svg>
+            <span>Sobre</span>
+        </a>
     </nav>
     <main>
         <div class="dispenser" id="dispenserEsquerda">
@@ -58,7 +86,7 @@
 
         <h1>Modelos de mensagens</h1>
 
-        <section class="modeloContainer">
+        <article class="modeloContainer">
             <p>
                 Venho por meio desta manifestar meu profundo agradecimento pela valiosa colaboração e apoio que Vossa
                 Senhoria dispensou ao longo do desenvolvimento do projeto [nome do projeto]. Sua expertise e
@@ -74,8 +102,8 @@
                 possibilidades de colaboração.
             </p>
             <button onclick="copiarTexto()">Copiar</button>
-        </section>
-        <section class="modeloContainer">
+        </article>
+        <article class="modeloContainer">
             <p>
                 Dirijo-me a Vossa Senhoria com o intuito de solicitar informações detalhadas sobre os procedimentos e
                 requisitos necessários para a inscrição no programa [nome do programa/curso/evento], oferecido por esta
@@ -91,8 +119,8 @@
                 contar com o suporte de sua equipe para o devido encaminhamento de minha inscrição.
             </p>
             <button onclick="copiarTexto()">Copiar</button>
-        </section>
-        <section class="modeloContainer">
+        </article>
+        <article class="modeloContainer">
             <p>
                 Tenho a honra de apresentar-me formalmente para manifestar meu interesse em colaborar com [nome da
                 empresa/instituição], instituição que admiro pela excelência e pela contribuição significativa ao setor
@@ -109,8 +137,8 @@
                 Agradeço pela atenção e aguardo a oportunidade de contato.
             </p>
             <button onclick="copiarTexto()">Copiar</button>
-        </section>
-        <section class="modeloContainer">
+        </article>
+        <article class="modeloContainer">
             <p>
                 Venho por meio desta expressar minha insatisfação com o atendimento recebido na unidade [nome da
                 unidade/setor], ocorrido no dia [data], que infelizmente não atendeu às expectativas estabelecidas pela
@@ -127,8 +155,8 @@
                 Agradeço desde já pela atenção dispensada e aguardo um retorno breve.
             </p>
             <button onclick="copiarTexto()">Copiar</button>
-        </section>
-        <section class="modeloContainer">
+        </article>
+        <article class="modeloContainer">
             <p>
                 Tenho o prazer de convidá-lo(a) para participar do evento [nome do evento], que será realizado no dia
                 [data], no [local], com início previsto para as [hora].
@@ -144,7 +172,7 @@
                 Desde já agradeço pela atenção e fico à disposição para quaisquer esclarecimentos adicionais.
             </p>
             <button onclick="copiarTexto()">Copiar</button>
-        </section>
+        </article>
 
 
     </main>
@@ -154,7 +182,7 @@
             <h3>Click & Write</h3>
         </section>
         <address>
-             <a href="http://linkedin.com/in/bruno-mendes-de-morais">
+            <a href="http://linkedin.com/in/bruno-mendes-de-morais">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" viewBox="0 0 256 256">
                     <path
                         d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140Z">

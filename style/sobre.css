@@ -41,9 +41,13 @@ main{
 }
 
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    min-height: 100dvh;
+    position: relative;
+}
+footer{
+    position: absolute;
+    width: 100dvw;
+    bottom: 0;
 }
 
 

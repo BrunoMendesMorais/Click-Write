@@ -46,9 +46,13 @@ nav a {
     color: white;
     text-decoration: none;
     height: 25%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 60px calc(100% - 60px);
     align-items: center;
-    justify-content: center;
+    background-color: rgb(25, 25, 25);
+}
+nav a svg{
+    margin: auto;
 }
 
 nav a:hover {
