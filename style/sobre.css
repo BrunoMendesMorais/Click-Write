@@ -24,17 +24,26 @@ p{
     margin: 70px auto;
     text-align: center;
 }
+#menuDropdown{
+    position: relative;
+}
 #irGit,#irGit>* {
     display: block;
     text-align: center;
     width: 200px;
     margin:  20px auto;
 }
-main{
-    min-height: 95dvh;
+main{    
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: -200px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 

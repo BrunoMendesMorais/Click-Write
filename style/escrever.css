@@ -180,6 +180,10 @@ main{
     padding: 2%;
 }
 
+#mensagemCarta{
+    overflow-y: auto;
+}
+
 input[type="submit"] {
     grid-area: su;
     width: 50%;
