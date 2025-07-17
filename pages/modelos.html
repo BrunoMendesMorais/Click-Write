@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <header id="header">
         <svg onclick="menuAbrir()" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#ffffff"
             viewBox="0 0 256 256">
@@ -27,29 +28,45 @@
         <a href="sobre.html">Sobre</a>
     </nav>
     <main>
+        <div class="dispenser" id="dispenserEsquerda">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta esquerda">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta esquerda">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta esquerda">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta esquerda">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta esquerda">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta esquerda">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta esquerda">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta esquerda">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta esquerda">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta esquerda">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta esquerda">
+        </div>
+        <div class="dispenser" id="dispenserDireita">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta direita">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta direita">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta direita">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta direita">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta direita">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta direita">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta direita">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta direita">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta direita">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta direita">
+            <img src="../imagens/carta.svg" alt="Carta" class="carta direita">
+        </div>
 
         <h1>Modelos de mensagens</h1>
 
-        <section class="textoPronto">
-            <article>
-                site por Bruno Mendes de Morais como projeto de programação web no primeiro semestre de ADS (anlise e desenvolvimento de sistemas) com objetivo de ultilizar formulario e HTML 5 semantico 
-            </article>
-            <button>Copiar</button>
-        </section>
-        <section class="textoPronto">
-            <article>
-                site por Bruno Mendes de Morais como projeto de programação web no primeiro semestre de ADS (anlise e desenvolvimento de sistemas) com objetivo de ultilizar formulario e HTML 5 semantico 
-            </article>
-            <button>Copiar</button>
-        </section>
-        <section class="textoPronto">
-            <article>
-                site por Bruno Mendes de Morais como projeto de programação web no primeiro semestre de ADS (anlise e desenvolvimento de sistemas) com objetivo de ultilizar formulario e HTML 5 semantico 
-            </article>
-            <button>Copiar</button>
+        <section class="modeloContainer">
+            <p>
+                Site desenvolvido por Bruno Mendes de Morais como projeto de Programação Web no primeiro semestre de
+                ADS
+                (Análise e Desenvolvimento de Sistemas), com o objetivo de utilizar formulários e HTML5 semântico.
+            </p>
+            <button onclick="copiarTexto()">Copiar</button>
         </section>
 
-        
+
     </main>
     <footer>
         <section>
@@ -76,3 +93,11 @@
         </address>
     </footer>
 </body>
+<script>
+    function copiarTexto() {
+        const texto = document.querySelector('.modeloContainer p').innerText;
+        navigator.clipboard.writeText(texto).then(() => {
+            alert("Texto copiado com sucesso!");
+        });
+    }
+</script>
