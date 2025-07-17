@@ -16,6 +16,7 @@ h1 {
     max-width: 60%;
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 40px;
 }
 
 .modeloContainer p {
