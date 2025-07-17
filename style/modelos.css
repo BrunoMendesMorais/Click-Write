@@ -95,6 +95,7 @@ margin-top: 80px;
     animation-duration: 2s;
     width: 100px;
     max-width: 10VW;
+    opacity: 0;
     animation: cair 5s infinite forwards;
 }
 
